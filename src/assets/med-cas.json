@@ -1,0 +1,187 @@
+{
+    "etudesDeCas": [
+      {
+        "name": "Cole Lester-Hole",
+        "age":"58 years old",
+        "gender":"Male",
+        "height":"1m82",
+        "weight":"80kg",
+        "picture":"pfp acs man.png",
+
+        "smallCc": "58 year old man complaining of severe chest pain.",
+        "bigCc": "I felt a sudden, severe pain in my chest, like something was squeezing my heart. It started while I was shoveling snow and didn’t go away even after I stopped and rested.",
+        "generalAppearance":"Distressed, diaphoretic and pale",
+
+        "texte": "Patient ID: - Name: Cole Lester-Hole - Age: 58 years old - Sex: Male - Origin: North American - Chief Complaint: “I felt a sudden, severe pain in my chest, like something was squeezing my heart. It started while I was shoveling snow and didn’t go away even after I stopped and rested.” - History of Present Illness: - Onset: The pain began abruptly this morning while shoveling snow. - Precipitating/Palliative factors: Rest did not alleviate the pain; no medications tried. - Quality: Described as a crushing, squeezing pain. - Radiation: Pain radiates to the left arm and jaw. - Severity: Rates pain as 9/10, severe. - Timing: The pain has been constant since onset. - Associated symptoms: Accompanied by shortness of breath, sweating, and nausea. - Patient History: - Past Medical History: Hypertension, high cholesterol. - Past Surgical History: Appendectomy at age 30. - Family History: Father died suddenly at age 60. - Medications: Lisinopril, atorvastatin. - Allergies: Penicillin, Pollen, Dog hair. - Social History:  - Smoking: 1 pack/day for 40 years. - Alcohol: Occasional beer on weekends. - Drug use: Smoked marijuana socially when he was in his 20s. - Sexual history: Married, monogamous. - Review of Systems: - Neuro: No headaches, vision changes, or focal weakness. - Resp: No cough, sore throat, or runny nose. Presents chest pain and shortness of breath. - Cardio: No palpitations. Presents chest pain, shortness of breath, and orthopnea. - GI: No abdominal pain, vomiting, diarrhea/constipation, or blood in stool. - Renal: No dysuria, frequency/urgency, or blood in urine. - Additional Information: The patient has been feeling generally unwell for the past month, with increasing fatigue and episodes of lightheadedness. He has a sedentary lifestyle and a diet high in saturated fats. He plays no sports and does not walk outside often, as he prefers to rely on his many cars. He is quite rich. He does play golf one time a month. He has not been compliant with his hypertension medication regimen lately, not taking his medications because he “didn’t feel the need to do so”. - Character: Distressed, slightly haughty. - Care: Has a primary care doctor. Doesn’t see her very much as he doesn’t “have the time to waste”.",
+
+        "vitals": "BP: 150/90 mmHg. HR: 105 bpm. O2 Sat: 92% on room air. Temperature: 37.2°C (98.9°F). Resp Rate: 22 breaths/min.",
+        "cardio":"Normal heart sounds. Slightly tachycardic. Distal pulses are present but weaker. Capillary refill time is slightly delayed at 3 seconds.",
+        "respiratory":"Lung fields are clear to auscultation bilaterally. Good air entry bilaterally.",
+        "abdo":"Abdomen is soft and non-tender. No hepatosplenomegaly palpable.",
+        "neuro":"No focal neurological deficits.",
+        "MSK & derm":"No joint swelling or deformities. No rash or skin lesions noted. No lymphadenopathy.",
+        "ENT": "Oropharynx shows no erythema, exudates, lesions, or swelling. No thyroid enlargement or nodules palpable. Intact tympanic membranes, no erythema or effusion. ",
+        "Constitutional": "No fever, chills, or night sweats",
+
+
+
+        
+        "CBC": "Hemoglobin: 14 g/dL\nHematocrit: 42%\nMCV: 90 fL\nWBC: 7,000 /µL\nNeutrophils: 60%\nLymphocytes: 30%\nMonocytes: 6%\nEosinophils: 3%\nBasophils: 1%\nPlatelets: 300,000 /µL",        
+        "CHEM7Electrolytes": "Sodium: 140 mEq/L\nPotassium: 4.5 mEq/L\nChloride: 100 mEq/L\nBicarbonate: 24 mEq/L\nBUN: 18 mg/dL\nCreatinine: 1.0 mg/dL\nGlucose: 100 mg/dL\nCalcium: 9.2 mg/dL",
+        "CMP": "Albumin: 4 g/dL\nTotal Protein: 7 g/dL\nALP: 70 U/L\nALT: 30 U/L\nAST: 50 U/L\nBilirubin: 1.0 mg/dL",
+        "LipidProfile": "Total Cholesterol: 240 mg/dL (Abnormal)\nLDL: 160 mg/dL (Abnormal)\nHDL: 30 mg/dL (Abnormal)\nTriglycerides: 150 mg/dL",
+        "INR": "1.0",
+        "ABG": "pH: 7.45\nPaCO2: 35 mmHg\nPaO2: 80 mmHg\nHCO3: 24 mEq/L",
+        "Urinalysis": "Appearance: Clear\nSpecific Gravity: 1.012\npH: 6.0\nProtein: 0 mg/dL\nGlucose: 0 mg/dL\nKetones: 0 mg/dL\nBilirubin: 0 mg/dL\nBlood: Negative\nLeukocyte Esterase: Negative\nNitrite: Negative\nCasts: None\nCrystals: None",
+        "Markers": "Troponin I: 0.5 ng/mL (Abnormal)\nBNP: 100 pg/mL\nCK: 170 U/L\nCRP: 3 mg/L",
+        "LPCSF": "Glucose: 60 mg/dL\nProtein: 45 mg/dL\nWBC: 5 /µL",
+        "Endocrine": "TSH: 2.5 µIU/mL\nFree T4: 1.1 ng/dL\nFree T3: 2.8 pg/mL\nCortisol AM: 18 µg/dL\nTestosterone: 400 ng/dL\nEstradiol: 25 pg/mL\nLH: 6 mIU/mL\nFSH: 12 mIU/mL\nProlactin: 10 ng/mL\nIGF-1: 150 ng/mL",
+
+        "Cultures": "Blood cultures: Negative\nGram stain: Negative\nSputum culture: Negative",
+        "ECG": "ECG Picture: acs man ecg.png\nECG Description: ST depression in the inferolateral leads.",
+        "PFTs": "FVC: 4.0 L\nFEV1: 3.0 L\nFEV1/FVC: 75%\nDLCO: 20 mL/min/mmHg",
+        
+        "POCUS":"No pericardial or pleural effusion. No pneumothorax. No abdominal aortic aneurysm. No fluid in the abdominal cavity.",
+        "xrayPicture":"./assets/xray.png",
+        "Fluoroscopy":"Significant near-total occlusion of the right coronary artery and significant stenosis of the left circumflex artery.",
+        "mriPicture":"Significant near-total occlusion of the right coronary artery and significant stenosis of the left circumflex artery.",
+
+        "Diagnosis":"Non-ST elevation myocardial infarction.",
+        "diagnosisChoices": {
+            "Cardiovascular System": [
+              "Stable Angina", 
+              "Unstable Angina", 
+              "Non-ST-elevation Myocardial Infarction", 
+              "ST-elevation Myocardial Infarction", 
+              "Atrial Fibrillation with Rapid Ventricular Response", 
+              "AV Block - 2nd degree type 1", 
+              "AV Block - 2nd degree type 2", 
+              "Av node reentrant tachycardia", 
+              "Atrioventricular reentrant tachycardia", 
+              "Atrial fibrillation", 
+              "Atrial flutter", 
+              "Myocarditis", 
+              "Pericarditis", 
+              "Supraventricular Tachycardia", 
+              "Vasovagal Syncope", 
+              "Deep vein thrombosis"
+            ],
+            "Dermatological System": [
+              "Cellulitis", 
+              "Stevens-Johnson Syndrome"
+            ],
+            "Endocrine System": [
+              "Adrenal Crisis", 
+              "Diabetic Ketoacidosis", 
+              "Hypercalcemia", 
+              "Hyperkalemia", 
+              "Hypernatremia", 
+              "Hypoglycemia", 
+              "Hyponatremia", 
+              "Hypothyroidism"
+            ],
+            "Gastrointestinal System": [
+              "Acute Gastroenteritis", 
+              "Appendicitis", 
+              "Cholecystitis", 
+              "Choledocholithiasis", 
+              "Diverticulitis", 
+              "Gastroesophageal Reflux Disease", 
+              "Viral Hepatitis", 
+              "Incarcerated Hernia", 
+              "Acute Pancreatitis", 
+              "Chronic Pancreatitis"
+            ],
+            "Immune/Hematological System": [
+              "Anaphylaxis", 
+              "Seasonal allergic rhinitis", 
+              "Disseminated Intravascular Coagulation", 
+              "Hemophilia", 
+              "Systemic lupus erythematosus"
+            ],
+            "Infectious Diseases / ENT": [
+              "Strep Pharyngitis", 
+              "Viral Upper Respiratory Tract Infection", 
+              "Epiglottitis", 
+              "Peritonsillar abscess", 
+              "Sepsis", 
+              "COVID-19", 
+              "Influenza", 
+              "Lyme Disease", 
+              "Pertussis"
+            ],
+            "Musculoskeletal System": [
+              "Acute Muscle Strain", 
+              "Chronic Lumbar Strain", 
+              "Bursitis", 
+              "Gout", 
+              "Osteoarthritis", 
+              "Rheumatoid arthritis", 
+              "Spondyloarthropathy", 
+              "Pseudogout", 
+              "Rhabdomyolysis", 
+              "Septic Arthritis", 
+              "Osteomyelitis", 
+              "Costochondritis"
+            ],
+            "Neurological System": [
+              "Cluster Headache", 
+              "Migraine", 
+              "Tension Headache", 
+              "Epidural hematoma", 
+              "Subdural hematoma", 
+              "Subarachnoid hemorrhage", 
+              "Stroke", 
+              "Generalized tonic chronic seizure", 
+              "Focal seizure with impaired awareness", 
+              "Focal seizure without impaired awareness", 
+              "Absence seizure", 
+              "Meningitis"
+            ],
+            "Obstetrics and Gynecology": [
+              "Ectopic Pregnancy", 
+              "Endometriosis", 
+              "Pelvic Inflammatory Disease", 
+              "Pre-eclampsia", 
+              "Polycystic ovarian syndrome", 
+              "Sheehan syndrome", 
+              "Cervical cancer", 
+              "Ovarian cancer", 
+              "Endometrial cancer"
+            ],
+            "Ophthalmological System": [
+              "Allergic Conjunctivitis", 
+              "Bacterial Conjunctivitis", 
+              "Viral Conjunctivitis", 
+              "Corneal Abrasion", 
+              "Corneal Foreign Body", 
+              "Acute Closed Angle Glaucoma", 
+              "Open Angle Glaucoma"
+            ],
+            "Pulmonary System": [
+              "Asthma", 
+              "Bronchitis", 
+              "COPD", 
+              "Pneumonia", 
+              "Pneumothorax", 
+              "Hemothorax"
+            ],
+            "Renal and Urological System": [
+              "Nephrotic Syndrome", 
+              "Glomerulonephritis / Nephritic Syndrome", 
+              "Nephrolithiasis", 
+              "Pyelonephritis", 
+              "Urinary Tract Infection"
+            ],
+            "Toxicological System": [
+              "Alcohol Withdrawal", 
+              "Carbon Monoxide Exposure"
+            ]
+          }
+      
+        }
+      
+
+
+    ]
+}

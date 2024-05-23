@@ -1,0 +1,235 @@
+<header>hello</header>
+<section class="clinical-encounter">
+    <div class="doctor-section">
+        <div class="doctor-image">
+            <img class="doc" src="./assets/aymen.png" alt="Logo and Title"  />
+        </div>
+        <div class="doctor-command">
+            <div class="title-command"> Ask Data</div>
+            <div class="separator"></div>
+            <div class="commands">
+                <div class="icon-section">
+                    <img class="icon" src="./assets/history.png" alt="Logo and Title" [class.active]="data === 'history'" (click)="selectContent('history')" width="80px" height="80px"  />
+                    <div>History</div>
+                </div>
+                <div class="icon-section" >
+                
+                    <img class="icon" src="./assets/exam.png" alt="Logo and Title" [class.active]="data === 'physicalExam'" (click)="selectContent('physicalExam')" width="80px" height="80px"  />
+                    <div>Physical Exam</div>
+                </div>
+                <div class="icon-section">
+                    <img class="icon" src="./assets/labtest.png" alt="Logo and Title" [class.active]="data === 'labTest'" (click)="selectContent('labTest')" width="80px" height="80px"  />
+                    <div>Lab Test</div>
+                </div>
+                <div class="icon-section">
+                    <img class="icon" src="./assets/imaging.png" alt="Logo and Title" [class.active]="data === 'imaging'" (click)="selectContent('imaging')" width="80px" height="80px"  />
+                    <div>Imaging</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="patient">
+        <div class="subtitle">
+            <div>Patient Information</div>
+            <div>Conversation</div>
+        </div>
+        <div class="separator1"></div>
+        <div class="patient-section">
+            <div class="patient-card">
+                <div class="card-name">Patient Card:</div>
+                <div class="card">
+                    <div *ngIf="data === 'history'">
+                        <div class="patient-id">
+                            <div class="idPic">
+                                <img [src]="picture" class="pictureId" alt="Image du patient" width="120px" height="120px" >
+                            </div>
+                            <div class="info">
+                                <div id="name">{{name}}</div>
+                                <div id="age">Age: {{age}}</div>
+                                <div id="gender">Sexe: {{gender}}</div>
+                                <div id="height">Height: {{height}}</div>
+                                <div id="weight">Weight: {{weight}} </div>
+                            </div>
+                            
+                        </div>
+                        <div class="separator2"></div>
+                        <div class="chiefComplaint">
+                            <div id="bigCc">Chief Complaint: {{bigCc}} </div>
+                        </div>
+                        <div class="separator2"></div>
+                        <div class="appearance">
+                            <div id="appearance">General Appearance: {{generalAppearance}} </div>
+                        </div>
+                    </div>
+                    <div *ngIf="data === 'physicalExam'">
+                        <div class="patient-id">
+                            <div class="idPic">
+                                <img [src]="picture" class="pictureId" alt="Image du patient" width="120px" height="120px" >
+                            </div>
+                            <div class="info">
+                                <div id="name">{{name}}</div>
+                                <div class="chiefComplaint">
+                                    <div id="bigCc">Chief Complaint: {{smallCc}} </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator2"></div>
+                        <div class="exams">
+                            <div class="exam">
+                                <img  src="./assets/cardio.png" alt="Logo and Title" [class.active]="exams === 'cardio'" (click)="selectExam('cardio')"/>
+                                <div>Cardio</div>
+                            </div>
+                            <div class="exam">
+                                <img  src="./assets/respiratory.png" alt="Logo and Title" [class.active]="exams === 'respiratory'" (click)="selectExam('respiratory')"/>
+                                <div>Respiratory</div>
+                            </div>
+                            <div class="exam">
+                                <img  src="./assets/cell.png" alt="Logo and Title" [class.active]="exams === 'cell'" (click)="selectExam('cell')"/>
+                                <div>Cel</div>
+                            </div>
+                            <div class="exam">
+                                <img  src="./assets/os.png" alt="Logo and Title" [class.active]="exams === 'msk'" (click)="selectExam('msk')"/>
+                                <div>MSK</div>
+                            </div>
+                            <div class="exam">
+                                <img  src="./assets/brain.png" alt="Logo and Title" [class.active]="exams === 'neuro'" (click)="selectExam('neuro')"/>
+                                <div>Neuro</div>
+                            </div>
+                            <div class="exam">
+                                <img  src="./assets/more.png" alt="Logo and Title" [class.active]="exams === 'more'" (click)="selectExam('more')"/>
+                                <div>More</div>
+                            </div>
+                        </div>
+                        <div *ngIf="exams" class="separator2"></div>
+                        <div *ngIf="exams === 'cardio'" class="examResult">{{cardio}}</div>
+                        <div *ngIf="exams === 'respiratory'" class="examResult">{{respiratory}}</div>
+                        <div *ngIf="exams === 'cell'" class="examResult">{{cel}} </div>
+                        <div *ngIf="exams === 'msk'" class="examResult">{{msk}} </div>
+                        <div *ngIf="exams === 'neuro'" class="examResult">{{neuro}} </div>
+                        <div *ngIf="exams === 'more'" class="examResult">No other exams</div>
+                        
+                    </div>
+                    <div *ngIf="data === 'labTest'">
+                        <div class="patient-id">
+                            <div class="idPic">
+                                <img [src]="picture" class="pictureId" alt="Image du patient" width="120px" height="120px" >
+                            </div>
+                            <div class="info">
+                                <div id="name">{{name}}</div>
+                                <div class="chiefComplaint">
+                                    <div id="bigCc">Chief Complaint: {{smallCc}} </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lab-test-section">
+                            <div class="labs">
+                                <div class="imaging-item" (click)="showLabResults(CBC)">
+                                    <div class="label">CBC</div>
+                                </div>
+                                <div class="imaging-item" (click)="showLabResults(CHEM7Electrolytes)">
+                                    <div class="label">CHEM7 & Electrolytes</div>
+                                </div>
+                                <div class="imaging-item" (click)="showLabResults(CMP)">
+                                    <div class="label">CMP</div>
+                                </div>
+                                <div class="imaging-item" (click)="showLabResults(LipidProfile)">
+                                    <div class="label">Lipid Profile</div>
+                                </div>
+                                <div class="imaging-item" (click)="showLabResults(INR)">
+                                    <div class="label">INR</div>
+                                </div>
+                                <div class="imaging-item" (click)="showLabResults(ABG)">
+                                    <div class="label">ABG</div>
+                                </div>
+                                <div class="imaging-item" (click)="showLabResults(Urinalysis)">
+                                    <div class="label">Urinalysis</div>
+                                </div>
+                                <div class="imaging-item" (click)="showLabResults(Markers)">
+                                    <div class="label">Markers</div>
+                                </div>
+                                <div class="imaging-item" (click)="showLabResults(LPCSF)">
+                                    <div class="label">LP & CSF</div>
+                                </div>
+                                <div class="imaging-item" (click)="showLabResults(Endocrine)">
+                                    <div class="label">Endocrine</div>
+                                </div>
+                            </div>
+                            <div class="tests">
+                                <div class="imaging-item" (click)="showLabResults(Cultures)">
+                                    <div class="label">Cultures</div>
+                                </div>
+                                <div class="imaging-item" (click)="showLabResults(ECG)">
+                                    <div class="label">ECG</div>
+                                </div>
+                                <div class="imaging-item" (click)="showLabResults(PFTs)">
+                                    <div class="label">PFTs</div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div *ngIf="data === 'imaging'">
+                        <div class="patient-id">
+                            <div class="idPic">
+                                <img [src]="picture" class="pictureId" alt="Image du patient" width="120px" height="120px">
+                            </div>
+                            <div class="info">
+                                <div id="name">{{name}}</div>
+                                <div class="chiefComplaint">
+                                    <div id="bigCc">Chief Complaint: {{smallCc}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imaging-section">
+                            <div class="imaging-row">
+                                <div class="imaging-item" (click)="toggleModal(xrayPicture)">
+                                    <img src="./assets/xray.png" alt="X-Ray" class="imaging-icon">
+                                    <div class="label">X-Ray</div>
+                                </div>
+                                <div class="imaging-item" (click)="toggleModal(POCUS)">
+                                    <img src="./assets/us.png" alt="US" class="imaging-icon">
+                                    <div class="label">Ultrasound</div>
+                                </div>
+                            </div>
+                            <div class="imaging-row">
+                                <div class="imaging-item" (click)="toggleModal(Fluoroscopy)">
+                                    <img src="./assets/ct.png" alt="CT" class="imaging-icon">
+                                    <div class="label">CT Scan</div>
+                                </div>
+                                <div class="imaging-item" (click)="toggleModal(mriPicture)">
+                                    <img src="./assets/ct.png" alt="MRI" class="imaging-icon">
+                                    <div class="label">MRI</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Popup Imaging-->
+                    <div class="modal" *ngIf="showModal">
+                        <div class="modal-content">
+                            <span class="close" (click)="toggleModal()">&times;</span>
+                            <img [src]="selectedImage" alt="Selected Imaging" onerror="this.onerror=null; this.src=''; this.alt='No Imaging Available';" style="width: 100%; height: 50%;">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="chat-section">
+                <div class="chat"   #scrollMe>
+                    <div *ngFor="let message of chatMessages">
+                        <div class="{{ message.role === 'user' ? 'user-message' : 'system-message' }}">
+                            {{ message.role === 'user' ? 'Doctor' : 'Patient' }}: {{ message.content }}
+                        </div>
+                    </div>
+                </div>
+                <form [formGroup]="queryFormGroup" (ngSubmit)="handleAskGPT()" (keyup.enter)="handleAskGPT()" >
+                    <div class="mb-3">
+                        <textarea formControlName="query" class="from-control"></textarea>
+                    </div>
+                    <button class="btn btn-success">Ask GPT</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+</section>
